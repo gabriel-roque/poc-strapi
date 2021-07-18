@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contratos",
+  "info": {
+    "name": "Contratos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "categoria": {
+      "via": "contratos",
+      "model": "categoria"
+    }
+  }
+}
