@@ -5,4 +5,9 @@
  * to customize this service
  */
 
-module.exports = {};
+module.exports = {
+  find (params, populate) {
+    console.log('>> LAYER SERVICE');
+    return strapi.query('contratos').find(params, populate);
+  },
+};

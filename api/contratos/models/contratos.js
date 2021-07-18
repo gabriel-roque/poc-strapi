@@ -5,4 +5,13 @@
  * to customize this model
  */
 
-module.exports = {};
+module.exports = {
+  lifecycles: {
+    beforeCreate (data) {
+      console.log(data);
+    },
+    afterCreate (result) {
+      console.log(result);
+    },
+  },
+};
