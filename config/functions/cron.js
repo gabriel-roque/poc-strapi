@@ -11,11 +11,7 @@
  */
 
 module.exports = {
-  /**
-   * Simple example.
-   * Every monday at 1am.
-   */
-  '*/5 * * * * *': () => {
-    console.log(`>> Run CRON JOB now: ${new Date()}`);
-  }
+  // '*/5 * * * * *': () => {
+  //   console.log(`>> Run CRON JOB now: ${new Date()}`);
+  // },
 };

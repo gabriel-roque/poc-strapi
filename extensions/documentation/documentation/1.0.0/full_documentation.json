@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/18/2021 12:16:48 PM"
+    "x-generation-date": "07/20/2021 10:07:33 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1065,6 +1065,63 @@
             }
           }
         ]
+      }
+    },
+    "/email": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Email"
+        ],
+        "parameters": []
       }
     },
     "/email/": {
@@ -3729,6 +3786,9 @@
     },
     {
       "name": "Contratos"
+    },
+    {
+      "name": "Email"
     },
     {
       "name": "Email - Email"

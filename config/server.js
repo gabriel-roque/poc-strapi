@@ -5,6 +5,9 @@ module.exports = ({ env }) => ({
     enabled: true
   },
   admin: {
+    watchIgnoreFiles: [
+      '**/email-sends/*'
+    ],
     auth: {
       secret: env('ADMIN_JWT_SECRET', '8508c5a8afc4709b125027d677432566'),
     },
