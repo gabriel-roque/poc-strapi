@@ -21,6 +21,11 @@
     "categoria": {
       "via": "contratos",
       "model": "categoria"
+    },
+    "documento": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
     }
   }
 }

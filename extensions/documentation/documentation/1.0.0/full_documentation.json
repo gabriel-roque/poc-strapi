@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/20/2021 3:44:46 PM"
+    "x-generation-date": "07/20/2021 5:43:37 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1127,10 +1127,10 @@
     "/test/role": {
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new test record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve test document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -3454,6 +3454,9 @@
                 "categoria": {
                   "type": "string"
                 },
+                "documento": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -3537,6 +3540,73 @@
               }
             }
           },
+          "documento": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -3557,6 +3627,32 @@
           "published_at": {
             "type": "string",
             "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Test": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "NewTest": {
+        "properties": {
+          "name": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

@@ -544,6 +544,9 @@
                 "categoria": {
                   "type": "string"
                 },
+                "documento": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

@@ -1,0 +1,17 @@
+{
+  "info": {
+    "name": "Test",
+    "description": ""
+  },
+  "options": {
+    "increments": false,
+    "timestamps": false,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

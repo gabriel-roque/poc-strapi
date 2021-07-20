@@ -3,10 +3,10 @@
     "/test/role": {
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new test record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve test document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -67,6 +67,36 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Test": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "NewTest": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
           }
         }
       }
