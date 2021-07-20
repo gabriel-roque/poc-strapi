@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "method": "post",
+      "path": "/test/role",
+      "handler": "test.changeRole",
+      "config": {
+        "policies": [
+          "global::is-authenticated"
+        ]
+      }
+    }
+  ]
+}
