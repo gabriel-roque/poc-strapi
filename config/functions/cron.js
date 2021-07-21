@@ -11,7 +11,7 @@
  */
 
 module.exports = {
-  // '*/5 * * * * *': () => {
+  // '*/1 * * * * *': () => {
   //   console.log(`>> Run CRON JOB now: ${new Date()}`);
   // },
 };

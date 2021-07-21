@@ -28,7 +28,7 @@
     "strapi-plugin-users-permissions": "3.6.5",
     "strapi-provider-email-sendgrid": "^3.6.5",
     "strapi-utils": "3.6.5",
-    "uuidv4": "^6.2.11"
+    "uuid": "^8.3.2"
   },
   "author": {
     "name": "A Strapi developer"
