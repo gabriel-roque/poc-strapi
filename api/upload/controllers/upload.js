@@ -1,6 +1,5 @@
 const { BlobServiceClient } = require('@azure/storage-blob')
 const { uuid: v4 } = require('uuidv4')
-const multer = require('@koa/multer');
 const fs = require('fs')
 
 module.exports = {
