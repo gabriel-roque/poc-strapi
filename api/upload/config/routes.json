@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/upload/storage/base64",
+      "handler": "upload.uploadStorageBase64",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/upload/storage/multipart",
+      "handler": "upload.uploadStorageMultiPart",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
